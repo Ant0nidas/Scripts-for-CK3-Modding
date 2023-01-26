@@ -1,7 +1,7 @@
 # Scripts-for-CK3-Modding
 Collection of my personal scripts to automate stupid tasks.
 
-To run javascripts you need to use a JavaScript runtime like NodeJS. Open your command prompt or terminal and navigate to the folder where the script is located with "cd YOURPATHHERE" and run the command "node scriptName.js".
+To run JavaScripts you need to use a JavaScript runtime like NodeJS. Open your command prompt or terminal and navigate to the folder where the script is located with "cd YOURPATHHERE" and run the command "node scriptName.js".
 
 ## Instructions for specific files  
 ### icondds_to_texticongui.js  
