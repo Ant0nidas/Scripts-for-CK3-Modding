@@ -10,3 +10,6 @@ Script reads every .dds file in a specified directory and includes them with cor
 2.  @line4, replace YOUR FULL PATH HERE with (you guessed it) the path of your icon.dds files
 3.  Run the script, output file "texticon.gui" will be created in the path you specified in step 2)
 4.  Place newly created file "texticon.gui" in folder /gui and enjoy!
+
+### ibl_maa_patcher.js
+This script will read each .txt file in the directory where the script is located. For every instance of "hills"; "taiga"; "drylands" it will create a new line with new IBL terrain that has the same parameter values. Simple.
