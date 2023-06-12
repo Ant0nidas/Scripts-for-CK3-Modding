@@ -12,4 +12,4 @@ Script reads every .dds file in a specified directory and includes them with cor
 4.  Place newly created file "texticon.gui" in folder /gui and enjoy!
 
 ### ibl_maa_patcher.js
-This script will read each .txt file in the directory where the script is located. For every instance of "hills"; "taiga"; "drylands" it will create a new line with new IBL terrain that has the same parameter values. Simple.
+This script will read each .txt file in the mod's parent directory. For every instance of "hills"; "taiga"; "drylands" it will create a new line with new IBL terrain that has the same parameter values. Created folder "output" that mimics original directory. Simple.
