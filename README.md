@@ -1,7 +1,7 @@
 # Scripts-for-CK3-Modding
 Collection of my personal scripts to automate stupid tasks.
 
-To run JavaScripts you need to use a JavaScript runtime like NodeJS. Open your command prompt or terminal and navigate to the folder where the script is located with "cd YOURPATHHERE" and run the command "node scriptName.js".
+To run JavaScripts you need to use a JavaScript runtime like NodeJS. Open your command prompt or terminal and navigate to the folder where the script is located with "cd YOURPATHHERE" (or "cd /d" when it is on another drive) and run the command "node scriptName.js".
 
 ## Instructions for specific files  
 ### icondds_to_texticongui.js  
@@ -11,5 +11,6 @@ Script reads every .dds file in a specified directory and includes them with cor
 3.  Run the script, output file "texticon.gui" will be created in the path you specified in step 2)
 4.  Place newly created file "texticon.gui" in folder /gui and enjoy!
 
-### ibl_maa_patcher.js
-This script will read each .txt file in the mod's parent directory. For every instance of "hills"; "taiga"; "drylands" it will create a new line with new IBL terrain that has the same parameter values. Created folder "output" that mimics original directory. Simple.
+### ibtp_patcher.js
+Place in CK3 mod directory (\Steam\steamapps\workshop\content\1158310). Make sure you only have the mods in there that you want patched.
+This script will read each .txt and for every instance of "hills"; "taiga"; "drylands" it will create a new line with new IBL terrain that has the same parameter values. Created folder "output" that mimics and smartly merges original directory.
