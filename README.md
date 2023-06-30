@@ -11,7 +11,7 @@ Script reads every .dds file in a specified directory and includes them with cor
 3.  Run the script, output file "texticon.gui" will be created in the path you specified in step 2)
 4.  Place newly created file "texticon.gui" in folder /gui and enjoy!
 
-### ibtp_patcher.js
+### ibtp_patcher.js (Ibn Battuta's Terrain Pack)
 Place in CK3 mod directory (\Steam\steamapps\workshop\content\1158310). Make sure you only have the mods in there that you want patched.
 This script will read each .txt and for every instance of "hills"; "taiga"; "drylands" it will create a new line with new IBL terrain that has the same parameter values. Created folder "output" that mimics and smartly merges original directory.
 
