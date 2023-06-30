@@ -19,4 +19,4 @@ This script will read each .txt and for every instance of "hills"; "taiga"; "dry
 Place in \Documents\Paradox Interactive\Crusader Kings III\logs
 This script will read the error.log and will then create an event file which fixes all of those errors:
 Flag is set but is never used; Variable is set but is never used; Event target is used but is never set;
-You will need the scripted_effect "fix_variable_error", which ships with Mostly Mechanical Mods for this to work.
+For this to work, you will need the scripted_effect "fix_variable_error" by Tobzn, which ships with Mostly Mechanical Mods, too.
