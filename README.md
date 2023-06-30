@@ -19,4 +19,4 @@ This script will read each .txt and for every instance of "hills"; "taiga"; "dry
 All credit goes to Tobbzn for file structure and Paradox Script!
 Place in \Documents\Paradox Interactive\Crusader Kings III\logs
 This script will read the error.log and will then create files which fix all of those errors:
-`Flag is set but is never used; Variable is set but is never used; Variable is used but is never set; Event target is used but is never set; Modifier was not used`
+`Flag is set but is never used; Variable is set but is never used; Variable is used but is never set; Event target is used but is never set; Modifier was not used by the script or code`
