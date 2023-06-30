@@ -14,3 +14,9 @@ Script reads every .dds file in a specified directory and includes them with cor
 ### ibtp_patcher.js
 Place in CK3 mod directory (\Steam\steamapps\workshop\content\1158310). Make sure you only have the mods in there that you want patched.
 This script will read each .txt and for every instance of "hills"; "taiga"; "drylands" it will create a new line with new IBL terrain that has the same parameter values. Created folder "output" that mimics and smartly merges original directory.
+
+### CMH_error_suppression.js 
+Place in \Documents\Paradox Interactive\Crusader Kings III\logs
+This script will read the error.log and will then create an event file which fixes all of those errors:
+Flag is set but is never used; Variable is set but is never used; Event target is used but is never set;
+You will need the scripted_effect "fix_variable_error", which ships with Mostly Mechanical Mods for this to work.
