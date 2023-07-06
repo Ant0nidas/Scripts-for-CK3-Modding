@@ -136,7 +136,7 @@ CMH_modifier_error_suppression.1 = {
     immediate = {\n`;
 
     modifier_errors.forEach(modifier => {
-        modifierData += `        add_character_modifier = {ERROR = ${modifier}}\n`;
+        modifierData += `        add_character_modifier = ${modifier}\n`;
     });
 
     modifierData += '    }\n}';
