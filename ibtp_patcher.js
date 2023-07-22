@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 const outputDirName = 'output';
-const ignoreDirNames = ['2227658180', '2416949291', '2490281800', '2995140947', 'gfx', 'map_data'];
+const ignoreDirNames = ['2227658180', '2416949291', '2975079361', '2490281800', '2995140947', '2552371897', '2995140947', '2984126808', 'history', 'gfx', 'map_data'];
+const ignoreFileNames = ['travel_options.txt', '00_traits.txt', '00_terrains.txt', '00_building_requirement_triggers.txt', '00_activity_scripted_modifiers.txt', '00_ep1_artifact_creation_effects.txt', '01_ep1_court_artifact_creation_effects.txt', '00_core_tenets_ibtp.txt', '00_artifact_modifiers.txt', '00_landed_titles.txt', 'resources_holdings.txt', '01_event_backgrounds.txt', 'hunt.txt', 'tournament.txt', '04_ep2_maa_attributes.txt', '00_BAP_modified_vanilla_traditions.txt', '00_BAP_traditions.txt', '00_CE_traditions.txt', 'BAP_guanche_traditions.txt', 'RICE_north_atlantic_traditions.txt', 'RICE_siberia_events.txt', 'travel_events_filippa.txt', 'travel_events_james.txt', 'travel_events_veronica.txt', 'religious_decision_events.txt', 'ep1_fund_inspiration_events.txt', 'ep2_tournament_events.txt', '00_core_tenets.txt'];
 
 function generateOutputPath(currentPath, basePath) {
     const baseComponents = basePath.split(path.sep);
@@ -25,6 +26,8 @@ function scanAndModifyFiles(currentPath, outputPath) {
 
     dir.forEach((dirent) => {
         const fullPath = path.join(currentPath, dirent.name);
+		
+		if (ignoreFileNames.includes(dirent.name)) return;
 
         if (dirent.isDirectory() && dirent.name !== outputDirName) {
             const fullOutputPath = generateOutputPath(path.join(outputPath, dirent.name), outputPath);
@@ -36,7 +39,7 @@ function scanAndModifyFiles(currentPath, outputPath) {
             let lineChangesCount = 0;
 
             data.forEach(line => {
-                const forbiddenWords = ['texture', 'environment', 'background', 'graphical', 'text', 'desc'];
+                const forbiddenWords = ['texture', 'environment', 'background', 'graphical', 'text', 'desc', 'has_cultural_parameter', 'scope:activity_temp.activity_location', 'icon'];
                 const shouldIgnore = forbiddenWords.some(word => line.includes(word)) || line.trim().startsWith('#');
 
                 newData.push(line);
