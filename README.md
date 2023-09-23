@@ -1,5 +1,5 @@
 # Scripts-for-CK3-Modding
-Collection of my personal scripts to automate stupid tasks. All scripts are written by ChatGPT, as I am no programmer.
+Collection of my personal scripts to automate stupid tasks. All scripts are written by ChatGPT.
 
 To run JavaScripts you need to use a JavaScript runtime like NodeJS. Open your command prompt (Win+R, type "cmd") and navigate to the folder where the script is located with "cd /d YOURPATHHERE" and run the command "node scriptName.js".
 
