@@ -5,7 +5,7 @@ To run JavaScripts you need to use a JavaScript runtime like NodeJS. Open your c
 
 ## Instructions for specific files  
 ### icondds_to_texticongui.js  
-Script reads every .dds file in a specified directory and includes them with correct syntax in new file texticon.gui. This results in correct display of MaA icons and illustrations ingame (provided you have related illustrations with identical name in gfx folders men_at_arms_big and _small) while saving you a stupid manual task.
+Script reads every .dds file in a specified directory and includes them with correct syntax in new file texticon.gui. This results in correct display of MaA icons and illustrations ingame (provided you have related illustrations with identical name in gfx folders men_at_arms_big and _small) while saving you a stupid manual task. Example picture: https://i.ibb.co/J2Kj8qS/icondds-to-texticonguiexample.png
 1.  Open with text editor
 2.  @line4, replace YOUR FULL PATH HERE with (you guessed it) the path of your icon.dds files. For example:
     const folderPath = path.resolve("G:/Steam/steamapps/workshop/content/1158310/2615435354/gfx/interface/icons/regimenttypes");
